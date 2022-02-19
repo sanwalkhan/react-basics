@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const name = "Sanwal Khan Awan"
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ <React.Fragment>
+ <h1>name : {name}</h1>
+ <p> render method</p>
+ <ol>
+ <li>ONE</li>
+ <li>Two</li>
+ </ol>
+ </React.Fragment>,
   document.getElementById('root')
 );
 
