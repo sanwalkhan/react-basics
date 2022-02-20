@@ -4,16 +4,24 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const name = "Sanwal Khan Awan"
+
+let currdate = new Date()
+currdate = currdate.getHours()  
+let greeting = '';
+
+if(currdate >= 1 && currdate< 12){
+  greeting = 'Good Morning'
+}else if(currdate >=12 && currdate <20){
+  greeting = "Good Evening"
+}else{
+  greeting = 'Good Night'
+}
 
 ReactDOM.render(
  <React.Fragment>
- <h1>name : {name}</h1>
- <p> render method</p>
- <ol>
- <li>ONE</li>
- <li>Two</li>
- </ol>
+ <h1>Hello Sir, {greeting} </h1>
+
+
  </React.Fragment>,
   document.getElementById('root')
 );
