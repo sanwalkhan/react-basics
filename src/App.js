@@ -1,9 +1,16 @@
 import './App.css';
 
+
+
 function App() {
+
+
+
+  let name = "Sanwal Khan"
+
   return (
     <div className="App">
-    Sanwal kHAN
+    Sanwal Khan
     </div>
   );
 }
