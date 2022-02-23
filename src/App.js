@@ -1,4 +1,8 @@
+
+import { useState } from 'react';
 import './App.css';
+
+import { DataArray } from './components/dataarray';
 
 
 
@@ -6,12 +10,16 @@ function App() {
 
 
 
-  let name = "Sanwal Khan"
+
+  
 
   return (
     <div className="App">
-    Sanwal Khan
+    
+    <DataArray/>
+
     </div>
+
   );
 }
 
